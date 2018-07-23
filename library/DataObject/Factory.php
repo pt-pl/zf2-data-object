@@ -9,9 +9,7 @@ use Zend\Db\Adapter\Adapter,
 	Zend\Db\Sql\Select,
 	Zend\Db\Sql\Sql,
 	Zend\Db\Sql\Update,
-	Zend\Db\Sql\Where,
-	Zend\ServiceManager\ServiceLocatorAwareInterface,
-	Zend\ServiceManager\ServiceLocatorAwareTrait;
+	Zend\Db\Sql\Where;
 
 /**
  * Abstract class using to create factory for models
@@ -19,10 +17,8 @@ use Zend\Db\Adapter\Adapter,
  * @license		New BSD License
  * @author		Mateusz Juściński, Mateusz Kohut, Daniel Kózka
  */
-abstract class Factory implements ServiceLocatorAwareInterface
+abstract class Factory
 {
-	use ServiceLocatorAwareTrait;
-
 	/**
 	 * Default option for count select query
 	 *
